@@ -4,7 +4,7 @@
 
 ## 复现
 
-运行此项目，然后访问`http://localhost:9000/saveBatch`和`http://localhost:9000/saveOneByOne`，会看到二者的行为并不一致。其中，`saveBatch`比较反常，`saveOneByOne`是预期的行为。
+运行此项目，然后访问`http://localhost:9000/saveBatch`和`http://localhost:9000/saveOneByOne`，会看到二者的行为并不一致。其中，`saveBatch`比较反常，仅下标为0的元素被填入了生成的ID，`saveOneByOne`则是预期行为，所有元素都会被填入生成的ID。
 
 ## 环境
 
